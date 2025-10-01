@@ -3,17 +3,17 @@
   <info>
     <title>Australian Journal of Grape and Wine Research</title>
     <id>https://www.mendeley.com/styles/ajgwr</id>
-    <link href="https://onlinelibrary.wiley.com/journal/ajgwr" />
+    <link href="https://onlinelibrary.wiley.com/journal/ajgwr"/>
     <author>
       <name>Custom AJGWR CSL</name>
     </author>
     <category citation-format="numeric"/>
-    <summary>Custom CSL for AJGWR: superscript in-text numbers, surname-first references, journal abbreviations, DOI included</summary>
+    <summary>AJGWR style: superscript in-text citations, surname-first references, all authors listed, abbreviated journal names, DOI included</summary>
   </info>
 
   <citation>
-    <layout prefix="" suffix="" delimiter=", ">
-      <text variable="citation-number" prefix="^" suffix=""/>
+    <layout delimiter=", " prefix="" suffix="">
+      <text variable="citation-number" prefix="^"/>
     </layout>
   </citation>
 
@@ -31,3 +31,4 @@
     </layout>
   </bibliography>
 </style>
+
