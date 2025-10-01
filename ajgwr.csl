@@ -8,59 +8,26 @@
       <name>Custom AJGWR CSL</name>
     </author>
     <category citation-format="numeric"/>
-    <summary>AJGWR style: superscript citations, surname-first references, all authors listed, abbreviated journal names, DOI included</summary>
+    <summary>AJGWR style: superscript in-text citations, surname-first references, all authors listed, abbreviated journal names, DOI included</summary>
   </info>
 
-  <!-- Macros -->
-  <macro name="author">
-    <names variable="author" delimiter=", ">
-      <name and="none" initialize-with=" " sort-separator=", "/>
-    </names>
-  </macro>
-
-  <macro name="issued">
-    <date variable="issued">
-      <date-part name="year"/>
-    </date>
-  </macro>
-
-  <macro name="title">
-    <text variable="title"/>
-  </macro>
-
-  <macro name="container">
-    <text variable="container-title" font-style="italic"/>
-  </macro>
-
-  <macro name="volume">
-    <text variable="volume" font-weight="bold"/>
-  </macro>
-
-  <macro name="pages">
-    <text variable="page"/>
-  </macro>
-
-  <macro name="doi">
-    <text variable="DOI" prefix="https://doi.org/"/>
-  </macro>
-
-  <!-- Citation -->
   <citation>
     <layout delimiter=", " prefix="" suffix="">
       <text variable="citation-number" prefix="^"/>
     </layout>
   </citation>
 
-  <!-- Bibliography -->
   <bibliography>
     <layout suffix=".">
-      <text macro="author" suffix=" "/>
-      <text macro="issued" prefix="(" suffix=") "/>
-      <text macro="title" suffix=". "/>
-      <text macro="container" suffix=" "/>
-      <text macro="volume" suffix=","/>
-      <text macro="pages" prefix=" " suffix=". "/>
-      <text macro="doi"/>
+      <names variable="author" delimiter=", ">
+        <name and="none" initialize-with=" " delimiter=", " sort-separator=", "/>
+      </names>
+      <text variable="issued" prefix=" (" suffix=")"/>
+      <text variable="title" suffix=". "/>
+      <text variable="container-title" font-style="italic" suffix=" "/>
+      <text variable="volume" font-weight="bold" prefix="" suffix=","/>
+      <text variable="page" prefix=" " suffix=". "/>
+      <text variable="DOI" prefix="https://doi.org/" suffix=""/>
     </layout>
   </bibliography>
 </style>
