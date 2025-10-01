@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0.1">
   <info>
-    <title>Australian Journal of Grape and Wine Research</title>
-    <id>https://www.mendeley.com/styles/ajgwr</id>
+    <title>AJGWR Custom Style</title>
+    <id>https://github.com/yourusername/ajgwr-custom</id>
     <link href="https://onlinelibrary.wiley.com/journal/ajgwr"/>
     <author>
       <name>Custom AJGWR CSL</name>
     </author>
     <category citation-format="numeric"/>
-    <summary>AJGWR style: superscript numeric in-text citations, surname-first references, all authors listed, abbreviated journal names, DOI included</summary>
+    <summary>AJGWR style: superscript citations, surname-first authors, italic abbreviated journal, bold volume, DOI included</summary>
   </info>
 
   <!-- Macros -->
   <macro name="author">
-    <names variable="author" and="none" delimiter=", ">
+    <names variable="author" delimiter=", " and="none">
       <name initialize-with=" " sort-separator=", "/>
     </names>
   </macro>
